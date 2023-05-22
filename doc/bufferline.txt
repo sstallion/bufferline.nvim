@@ -171,6 +171,7 @@ The available configuration are:
                 local modified_b = vim.fn.getftime(buffer_b.path)
                 return modified_a > modified_b
             end,
+            show_modified = true | false | function(context): boolean,
             pick = {
               alphabet = "abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ1234567890",
             },
